@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import WeatherIcons from 'react-weathericons';
-// https://api.darksky.net/forecast/{process.env.REACT_APP_DARK_SKY}/47.6062,-122.3321?exclude=hourly,minutely,currently
 
 // weather conditions, min and max temperatures and weather icons
 // data[i].summary, data.icon, data.temperatureMin, data.temperatureMax
