@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import WeatherIcons from 'react-weathericons';
 
-
 // clear-day: day-sunny
 // clear-night: night-clear
 // rain: wi-rain
@@ -14,13 +13,8 @@ import WeatherIcons from 'react-weathericons';
 // partly-cloudy-night: night-alt-cloudy
 // default: na
 
-   //  var weatherTiles = this.state.weatherByDay.map(function(day) {
-      //     return <WeatherTile day={day} />
-      //   })
 class WeatherTileList extends Component {
-  // constructor(props) {
-  //   super(props)
-  // }
+
   render() {
     return (
       <div>
