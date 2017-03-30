@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-// import WeatherIcons from 'react-weathericons';
+import WeatherIcons from 'react-weathericons';
 
-// weather conditions, min and max temperatures and weather icons
-// data[i].summary, data.icon, data.temperatureMin, data.temperatureMax
-// degrees
 
 // clear-day: day-sunny
 // clear-night: night-clear
@@ -25,10 +22,8 @@ class WeatherTileList extends Component {
   //   super(props)
   // }
   render() {
-    console.log(this.props.weather)
     return (
       <div>
-
         {this.props.weather.map(this.renderWeatherTile)}
       </div>
     );
@@ -37,13 +32,12 @@ class WeatherTileList extends Component {
   renderWeatherTile({summary, icon, temperatureMax, temperatureMin, time}) {
     return (
       <div key={time}>
-      {/*<WeatherIcons name="day-cloudy" size="2x" />*/}
+      <WeatherIcons name="day-cloudy" size="2x" />
         <p>{summary}</p>
-        <p>{temperatureMin}</p>
-        <p>{temperatureMax}</p>
-    </div>
-    )
-
+        <p>Low: {temperatureMin} <WeatherIcons name="degrees" size="2x" /></p>
+        <p>High: {temperatureMax} <WeatherIcons name="degrees" size="2x" /></p>
+      </div>
+      )
     }
 }
 
