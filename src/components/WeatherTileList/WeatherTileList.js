@@ -9,36 +9,38 @@ class WeatherTileList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="flexContainer">
         {this.props.weather.map(this.renderWeatherTile)}
       </div>
     );
   }
 
   renderWeatherTile({summary, icon, temperatureMax, temperatureMin, time}) {
-    renderWeatherIcon(icon) {
-      return <WeatherIcons name="day-sunny" size="2x" />
-      // switch(icon) {
-      //   case "clear-day":
-      //     return <WeatherIcons name="day-sunny" size="2x" />;
-      //     break;
-      //   default:
-      //     return <WeatherIcons name="na" size="2x" />;
-      //     break;
-      // }
-      }
     return (
-      <div key={time}>
-        {this.renderWeatherIcon({icon})}
+      <div key={time} className="weatherTile">
+        {/*{this.renderWeatherIcon.bind(this, {icon})}*/}
       {/*<WeatherIcons name={this.getIconName({icon})} size="2x" />*/}
+        <WeatherIcons name="day-sunny" size="4x" />
         <p>{summary}</p>
-        <p>Low: {temperatureMin} <WeatherIcons name="degrees" size="2x" /></p>
-        <p>High: {temperatureMax} <WeatherIcons name="degrees" size="2x" /></p>
+        <p className="temperatureLabel">Low:</p>
+        <p className="temperature"><strong>{temperatureMin}</strong> <WeatherIcons name="degrees" size="lg" /></p>
+        <p className="temperatureLabel">High:</p>
+        <p className="temperature"><strong>{temperatureMax}</strong> <WeatherIcons name="degrees" size="lg" /></p>
       </div>
       )
     }
 
-
+    // renderWeatherIcon(icon) {
+    //   return ( <WeatherIcons name="day-sunny" size="2x" />
+    //   // switch(icon) {
+    //   //   case "clear-day":
+    //   //     return <WeatherIcons name="day-sunny" size="2x" />;
+    //   //     break;
+    //   //   default:
+    //   //     return <WeatherIcons name="na" size="2x" />;
+    //   //     break;
+    //   // }
+    //   )}
 
     // getIconName({icon}) {
     //   switch(icon) {

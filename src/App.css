@@ -1,3 +1,39 @@
 .App {
+  background-color: #25d2db;
   text-align: center;
+}
+
+.Header {
+  padding-top: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+}
+
+a {
+  color: #474c4c;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.weatherTile {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  width: 300px;
+}
+
+.temperature {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.temperatureLabel {
+  margin: 0;
+  color: #474c4c;
 }
