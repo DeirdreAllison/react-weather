@@ -9,7 +9,8 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-weathericons": "^1.0.3",
-    "whatwg-fetch": "^2.0.3"
+    "whatwg-fetch": "^2.0.3",
+    "fetch-jsonp": "1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
