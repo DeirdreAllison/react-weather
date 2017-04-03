@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import WeatherIcons from 'react-weathericons';
+import WeatherIcon from '../../components/WeatherIcon/WeatherIcon';
 
 class WeatherTileList extends Component {
   // constructor(props) {
@@ -18,9 +19,12 @@ class WeatherTileList extends Component {
   renderWeatherTile({summary, icon, temperatureMax, temperatureMin, time}) {
     return (
       <div key={time} className="weatherTile">
-        {/*{this.renderWeatherIcon.bind(this, {icon})}*/}
-      {/*<WeatherIcons name={this.getIconName({icon})} size="2x" />*/}
-        <WeatherIcons name="day-sunny" size="4x" />
+        {/*{console.log(this.getIconName(icon))}*/}
+        <p className="date">{new Date(time * 1000).toDateString()}</p>
+        <WeatherIcon icon={icon} />
+        {/*{this.renderWeatherIcon(icon)}*/}
+        {/*<WeatherIcons name={this.getIconName(icon)} size="2x" />*/}
+        {/*<WeatherIcons name="day-sunny" size="4x" className="weatherIcon" />*/}
         <p>{summary}</p>
         <p className="temperatureLabel">Low:</p>
         <p className="temperature"><strong>{temperatureMin}</strong> <WeatherIcons name="degrees" size="lg" /></p>
@@ -30,19 +34,20 @@ class WeatherTileList extends Component {
       )
     }
 
-    // renderWeatherIcon(icon) {
-    //   return ( <WeatherIcons name="day-sunny" size="2x" />
-    //   // switch(icon) {
-    //   //   case "clear-day":
-    //   //     return <WeatherIcons name="day-sunny" size="2x" />;
-    //   //     break;
-    //   //   default:
-    //   //     return <WeatherIcons name="na" size="2x" />;
-    //   //     break;
-    //   // }
-    //   )}
 
-    // getIconName({icon}) {
+    // renderWeatherIcon(icon) {
+      // return ( <WeatherIcons name="day-sunny" size="2x" />
+      // switch(icon) {
+      //   case "clear-day":
+      //     return <WeatherIcons name="day-sunny" size="2x" />;
+      //     break;
+      //   default:
+      //     return <WeatherIcons name="na" size="2x" />;
+      //     break;
+      // }
+      // )}
+
+    // getIconName(icon) {
     //   switch(icon) {
     //     case "clear-day":
     //       return "day-sunny";
@@ -78,6 +83,9 @@ class WeatherTileList extends Component {
     //       return "na";
     //   }
     // }
+
+
 }
+
 
 export default WeatherTileList;

@@ -9,6 +9,10 @@
   font-size: 2em;
 }
 
+.Footer {
+  padding: 20px;
+}
+
 a {
   color: #474c4c;
 }
@@ -36,4 +40,14 @@ a {
 .temperatureLabel {
   margin: 0;
   color: #474c4c;
+  font-family: 'Roboto Slab', serif;
+}
+
+.date {
+  color: #474c4c;
+  font-family: 'Roboto Slab', serif;
+}
+
+.weatherIcon {
+  padding: 15px;
 }
