@@ -1,10 +1,10 @@
+# Weather forecast using React and the Dark Sky API
+
 View [demo](https://shielded-beach-73423.herokuapp.com/)
 
 To run this app locally, first get an API key from Dark Sky
 
-Clone the repo, then you may need to `npm install`
-
-Then, run `REACT_APP_DARK_SKY=<your_api_key> npm start` to see the app in action
+Clone the repo and run `REACT_APP_DARK_SKY=<your_api_key> npm start` to see the app in action, you may need to `npm install`
 
 To test, run `npm test`
 
