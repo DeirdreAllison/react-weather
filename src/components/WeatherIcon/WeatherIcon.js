@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import WeatherIcons from 'react-weathericons';
 
 class WeatherIcon extends Component {
+  // This is gross! Usually I'd try to set all props at the parent most component and pass it down
+  // so this component could be avoided entirely, but looping through everything at the parent seemed
+  // not great performance wise
 
   render() {
       let icon = null;
