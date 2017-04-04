@@ -8,6 +8,6 @@ Clone the repo and run `REACT_APP_DARK_SKY=<your_api_key> npm start` to see the 
 
 To test, run `npm test`
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find the most recent version of its documentation [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find the most recent version of its documentation [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md) which includes information on how to build and deploy the app.
 
 Resource reference: [https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
